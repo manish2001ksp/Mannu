@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kundan Misthan Bhandar | Best Sweets in Kashipur</title>
+    <meta name="description" content="Kundan Misthan Bhandar - Kashipur's finest sweets, namkeen & festival specials. Order fresh mithai online. Call 092196 91834">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF9933',
+                        primaryDark: '#E68A00',
+                        accent: '#C62828',
+                        brown: '#5D4037',
+                        cream: '#FFF8E7',
+                        lightOrange: '#FFF3E0'
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Fallback: Always show content even if AOS fails */
+        [data-aos] {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+
+        /* Smooth animations */
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .float {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #FF9933, #C62828);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .call-float {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        @keyframes pulse-orange {
+            0%, 100% {
+                box-shadow: 0 0 0 0 rgba(255, 153, 51, 0.4);
+            }
+
+            50% {
+                box-shadow: 0 0 0 15px rgba(255, 153, 51, 0);
+            }
+        }
+
+        .pulse-orange {
+            animation: pulse-orange 2s infinite;
+        }
+    </style>
+</head>
+<body class="bg-cream font-sans text-brown">
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass shadow-lg">
+        <nav class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-2">
+                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                    <i class="ph-fill ph-confetti text-white text-2xl"></i>
+                </div>
+                <div class="hidden sm:block">
+                    <h1 class="text-xl font-bold text-brown">Kundan</h1>
+                    <p class="text-xs text-gray-500">Misthan Bhandar</p>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-6">
+                <a href="#home" class="hover:text-primary transition">Home</a>
+                <a href="#menu" class="hover:text-primary transition">Menu</a>
+                <a href="#gallery" class="hover:text-primary transition">Gallery</a>
+                <a href="#about" class="hover:text-primary transition">About</a>
+                <a href="#contact" class="hover:text-primary transition">Contact</a>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="flex items-center gap-3">
+                <a href="tel:09219691834" class="hidden sm:flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-full hover:bg-primaryDark transition">
+                    <i class="ph-fill ph-phone"></i>
+                    <span class="font-medium">Call Now</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-2xl">
+                <i class="ph ph-list"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="flex flex-col p-4 gap-3">
+                <a href="#home" class="py-2 hover:text-primary">Home</a>
+                <a href="#menu" class="py-2 hover:text-primary">Menu</a>
+                <a href="#gallery" class="py-2 hover:text-primary">Gallery</a>
+                <a href="#about" class="py-2 hover:text-primary">About</a>
+                <a href="#contact" class="py-2 hover:text-primary">Contact</a>
+                <a href="tel:09219691834" class="py-2 text-primary font-medium">📞 Call Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== FLOATING BUTTONS ==================== -->
+    <a href="tel:09219691834" class="call-float bg-primary text-white px-4 py-3 rounded-full shadow-lg hover:bg-primaryDark transition flex items-center gap-2 pulse-orange">
+        <i class="ph-fill ph-phone text-xl"></i>
+        <span class="font-medium">092196 91834</span>
+    </a>
+
+    <a href="https://wa.me/919219691834" target="_blank" class="whatsapp-float bg-[#25D366] text-white px-5 py-3 rounded-full shadow-lg hover:bg-[#20BD5A] transition flex items-center gap-2">
+        <i class="ph-fill ph-whatsapp-logo text-2xl"></i>
+        <span class="font-medium hidden sm:inline">Order on WhatsApp</span>
+    </a>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden" style="background: linear-gradient(135deg, #FFF8E7 0%, #FFF3E0 100%);">
+        <!-- Background Decoration -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute top-20 left-10 opacity-20 float">
+                <i class="ph-fill ph-candy text-6xl text-primary"></i>
+            </div>
+            <div class="absolute bottom-20 right-10 opacity-20 float" style="animation-delay: 1s;">
+                <i class="ph-fill ph-cookie text-6xl text-primary"></i>
+            </div>
+            <div class="absolute top-1/2 left-1/4 opacity-10 float" style="animation-delay: 2s;">
+                <i class="ph-fill ph-birthday-cake text-8xl text-primary"></i>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 py-20 text-center relative z-10">
+            <div data-aos="fade-up" data-aos-delay="100">
+                <!-- Badge -->
+                <div class="inline-flex items-center gap-2 bg-lightOrange text-accent px-4 py-2 rounded-full mb-6">
+                    <i class="ph-fill ph-star"></i>
+                    <span class="text-sm font-medium">Kashipur's #1 Sweet Shop</span>
+                </div>
+
+                <!-- Heading -->
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                    <span class="text-brown">Fresh & Pure</span>
+                    <br>
+                    <span class="gradient-text">Indian Mithai</span>
+                </h1>
+
+                <!-- Subheading -->
+                <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                    Authentic sweets, namkeen & festival specials made with 100% pure desi ghee.
+                    <span class="font-medium text-brown">Since 25+ Years</span>
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#menu" class="bg-primary text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-primaryDark transition shadow-lg hover:shadow-xl flex items-center justify-center gap-2">
+                        <i class="ph-fill ph-shopping-bag"></i>
+                        View Menu
+                    </a>
+                    <a href="https://wa.me/919219691834?text=Hello Kundan Misthan Bhandar, I want to order sweets" target="_blank" class="bg-white text-primary border-2 border-primary px-8 py-4 rounded-full font-semibold text-lg hover:bg-primary hover:text-white transition flex items-center justify-center gap-2">
+                        <i class="ph-fill ph-whatsapp-logo"></i>
+                        Order on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Stats -->
+                <div class="flex justify-center gap-8 md:gap-16 mt-12">
+                    <div data-aos="fade-up" data-aos-delay="100">
+                        <p class="text-3xl md:text-4xl font-bold text-primary">25+</p>
+                        <p class="text-gray-500">Years Experience</p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="200">
+                        <p class="text-3xl md:text-4xl font-bold text-primary">50+</p>
+                        <p class="text-gray-500">Products</p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="300">
+                        <p class="text-3xl md:text-4xl font-bold text-primary">10K+</p>
+                        <p class="text-gray-500">Happy Customers</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Scroll Down -->
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <a href="#menu" class="text-primary text-3xl">
+                    <i class="ph-fill ph-caret-down"></i>
+                </a>
+            </div>
+</section>
+
+    <!-- ==================== MENU SECTION ==================== -->
+    <section id="menu" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <!-- Section Header -->
+            <div class="text-center mb-16" data-aos="fade-up">
+                <div class="inline-flex items-center gap-2 bg-orange-100 text-accent px-4 py-2 rounded-full mb-4">
+                    <i class="ph-fill ph-utensils"></i>
+                    <span class="text-sm font-medium">Fresh Daily</span>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-brown mb-4">Our Menu</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Explore our wide range of authentic Indian sweets and snacks</p>
+            </div>
+
+            <!-- Category Tabs -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12" data-aos="fade-up" data-aos-delay="100">
+                <button onclick="showCategory('sweets')" class="category-btn bg-primary text-white px-6 py-3 rounded-full font-medium transition" data-category="sweets">
+                    🍬 Sweets
+                </button>
+                <button onclick="showCategory('namkeen')" class="category-btn bg-lightOrange text-brown px-6 py-3 rounded-full font-medium hover:bg-primary hover:text-white transition" data-category="namkeen">
+                    🧂 Namkeen
+                </button>
+                <button onclick="showCategory('special')" class="category-btn bg-lightOrange text-brown px-6 py-3 rounded-full font-medium hover:bg-primary hover:text-white transition" data-category="special">
+                    🎉 Special
+                </button>
+            </div>
+
+            <!-- Sweets Grid -->
+            <div id="sweets" class="category-content grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Item 1 -->
+                <div class="menu-card bg-cream rounded-2xl p-4 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="aspect-square bg-lightOrange rounded-xl mb-4 flex items-center justify-center overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1599639668273-41d7364fc51a?w=400&h=400&fit=crop" alt="Gulab Jamun" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-brown mb-1">Gulab Jamun</h3>
+                    <p class="text-gray-500 text-sm mb-3">Soft & juicy milk solids</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-primary">₹400/kg</span>
+                        <button onclick="orderItem('Gulab Jamun')" class="bg-primary text-white px-4 py-2 rounded-full text-sm hover:bg-primaryDark transition">
+                            🛒 Order
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="menu-card bg-cream rounded-2xl p-4 transition-all duration-300" data-aos="fade-up" data-aos-delay="150">
+                    <div class="aspect-square bg-lightOrange rounded-xl mb-4 flex items-center justify-center overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400&h=400&fit=crop" alt="Rasgulla" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-brown mb-1">Rasgulla</h3>
+                    <p class="text-gray-500 text-sm mb-3">Spongy cottage cheese</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-primary">₹350/kg</span>
+                        <button onclick="orderItem('Rasgulla')" class="bg-primary text-white px-4 py-2 rounded-full text-sm hover:bg-primaryDark transition">
+                            🛒 Order
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="menu-card bg-cream rounded-2xl p-4 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="aspect-square bg-lightOrange rounded-xl mb-4 flex items-center justify-center overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1589119908995-c6837fa14848?w=400&h=400&fit=crop" alt="Besan Laddu" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-brown mb-1">Besan Laddu</h3>
+                    <p class="text-gray-500 text-sm mb-3">Gram flour sweet</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-primary">₹380/kg</span>
+                        <button onclick="orderItem('Besan Laddu')" class="bg-primary text-white px-4 py-2 rounded-full text-sm hover:bg-primaryDark transition">
+                            🛒 Order
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="menu-card bg-cream rounded-2xl p-4 transition-all duration-300" data-aos="fade-up" data-aos-delay="250">
+                    <div class="aspect-square bg-lightOrange rounded-xl mb-4 flex items-center justify-center overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1626803775151-61d756612fcd?w=400&h=400&fit=crop" alt="Jalebi" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-brown mb-1">Jalebi</h3>
+                    <p class="text-gray-500 text-sm mb-3">Crispy sweet spirals</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-primary">₹450/kg</span>
+                        <button onclick="orderItem('Jalebi')" class="bg-primary text-white px-4 py-2 rounded-full text-sm hover:bg-primaryDark transition">
+                            🛒 Order
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="menu-card bg-cream rounded-2xl p-4 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="aspect-square bg-lightOrange rounded-xl mb-4 flex items-center justify-center overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1605197136312-dba8b5595f5a?w=400&h=400&fit=crop" alt="Kaju Katli" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-brown mb-1">Kaju Katli</h3>
+                    <p class="text-gray-500 text-sm mb-3">Premium cashew fudge</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-primary">₹900/kg</span>
+                        <button onclick="orderItem('Kaju Katli')" class="bg-primary text-white px-4 py-2 rounded-full text-sm hover:bg-primaryDark transition">
+                            🛒 Order
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="menu-card bg-cream rounded-2xl p-4 transition-all duration-300" data-aos="fade-up" data-aos-delay="350">
+                    <div class="aspect-square bg-lightOrange rounded-xl mb-4 flex items-center justify-center overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1616165602770-f149f61f818c?w=400&h=400&fit=crop" alt="Rasmalai" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-brown mb-1">Rasmalai</h3>
+                    <p class="text-gray-500 text-sm mb-3">Cottage cheese in milk</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-primary">₹400/kg</span>
+                        <button onclick="orderItem('Rasmalai')" class="bg-primary text-white px-4 py-2 rounded-full text-sm hover:bg-primaryDark transition">
+                            🛒 Order
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Item 7 -->
+                <div class="menu-card bg-cream rounded-2xl p-4 transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
+                    <div class="aspect-square bg-lightOrange rounded-xl mb-4 flex items-center justify-center overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1599043513900-489f22695880?w=400&h=400&fit=crop" alt="Motichoor Laddu" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-brown mb-1">Motichoor Laddu</h3>
+                    <p class="text-gray-500 text-sm mb-3">Tiny pearl sweets</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-primary">₹500/kg</span>
+                        <button onclick="orderItem('Motichoor Laddu')" class="bg-primary text-white px-4 py-2 rounded-full text-sm hover:bg-primaryDark transition">
+                            🛒 Order
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Item 8 -->
+                <div class="menu-card bg-cream rounded-2xl p-4 transition-all duration-300" data-aos="fade-up" data-aos-delay="450">
+                    <div class="aspect-square bg-lightOrange rounded-xl mb-4 flex items-center justify-center overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&h=400&fit=crop" alt="Badam Halwa" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-brown mb-1">Badam Halwa</h3>
+                    <p class="text-gray-500 text-sm mb-3">Almond sweet dessert</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-primary">₹700/kg</span>
+                        <button onclick="orderItem('Badam Halwa')" class="bg-primary text-white px-4 py-2 rounded-full text-sm hover:bg-primaryDark transition">
+                            🛒 Order
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Namkeen Grid (Hidden by default) -->
+            <div id="namkeen" class="category-content grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 hidden">
+                <div class="menu-card bg-cream rounded-2xl p-4 transition-all duration-300" data-aos="fade-up">
+                    <div class="aspect-square bg-lightOrange rounded-xl mb-4 flex items-center justify-center">
+                        <i class="ph-fill ph-cookie text-6xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brown mb-1">Aloo Bhujia</h3>
+                    <p class="text-gray-500 text-sm mb-3">Crispy potato snack</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-primary">₹200/kg</span>
+                        <button onclick="orderItem('Aloo Bhujia')" class="bg-primary text-white px-4 py-2 rounded-full text-sm hover:bg-primaryDark transition">
+                            🛒 Order
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-card bg-cream rounded-2xl p-4 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="aspect-square bg-lightOrange rounded-xl mb-4 flex items-center justify-center">
+                        <i class="ph-fill ph-cookie text-6xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brown mb-1">Besan Sev</h3>
+                    <p class="text-gray-500 text-sm mb-3">Gram flour noodles</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-primary">₹180/kg</span>
+                        <button onclick="orderItem('Besan Sev')" class="bg-primary text-white px-4 py-2 rounded-full text-sm hover:bg-primaryDark transition">
+                            🛒 Order
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-card bg-cream rounded-2xl p-4 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="aspect-square bg-lightOrange rounded-xl mb-4 flex items-center justify-center">
+                        <i class="ph-fill ph-cookie text-6xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brown mb-1">Chana Dal</h3>
+                    <p class="text-gray-500 text-sm mb-3">Roasted gram snack</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-primary">₹220/kg</span>
+                        <button onclick="orderItem('Chana Dal')" class="bg-primary text-white px-4 py-2 rounded-full text-sm hover:bg-primaryDark transition">
+                            🛒 Order
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-card bg-cream rounded-2xl p-4 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="aspect-square bg-lightOrange rounded-xl mb-4 flex items-center justify-center">
+                        <i class="ph-fill ph-cookie text-6xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brown mb-1">Mixed Namkeen</h3>
+                    <p class="text-gray-500 text-sm mb-3">Assorted savory mix</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-primary">₹250/kg</span>
+                        <button onclick="orderItem('Mixed Namkeen')" class="bg-primary text-white px-4 py-2 rounded-full text-sm hover:bg-primaryDark transition">
+                            🛒 Order
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Special Grid (Hidden by default) -->
+            <div id="special" class="category-content grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 hidden">
+                <div class="menu-card bg-gradient-to-br from-primary to-accent rounded-2xl p-6 text-white" data-aos="fade-up">
+                    <div class="text-4xl mb-4">🪔</div>
+                    <h3 class="text-2xl font-bold mb-2">Diwali Special</h3>
+                    <p class="mb-4 opacity-90">Premium gift boxes, sweets collection & dry fruit boxes</p>
+                    <button onclick="orderItem('Diwali Special')" class="bg-white text-primary px-6 py-2 rounded-full font-medium hover:bg-gray-100 transition">
+                        Order Now
+                    </button>
+                </div>
+
+                <div class="menu-card bg-gradient-to-br from-primary to-accent rounded-2xl p-6 text-white" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-4xl mb-4">💒</div>
+                    <h3 class="text-2xl font-bold mb-2">Wedding Special</h3>
+                    <p class="mb-4 opacity-90">Bulk orders, catering & custom sweets for weddings</p>
+                    <button onclick="orderItem('Wedding Special')" class="bg-white text-primary px-6 py-2 rounded-full font-medium hover:bg-gray-100 transition">
+                        Enquire Now
+                    </button>
+                </div>
+
+                <div class="menu-card bg-gradient-to-br from-primary to-accent rounded-2xl p-6 text-white" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-4xl mb-4">🎉</div>
+                    <h3 class="text-2xl font-bold mb-2">Party Orders</h3>
+                    <p class="mb-4 opacity-90">Special discounts on bulk orders for parties & events</p>
+                    <button onclick="orderItem('Party Order')" class="bg-white text-primary px-6 py-2 rounded-full font-medium hover:bg-gray-100 transition">
+                        Get Quote
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== GALLERY SECTION ==================== -->
+    <section id="gallery" class="py-20 bg-cream">
+        <div class="max-w-7xl mx-auto px-4">
+            <!-- Section Header -->
+            <div class="text-center mb-16" data-aos="fade-up">
+                <div class="inline-flex items-center gap-2 bg-orange-100 text-accent px-4 py-2 rounded-full mb-4">
+                    <i class="ph-fill ph-images"></i>
+                    <span class="text-sm font-medium">Our Work</span>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-brown mb-4">Photo Gallery</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Glimpses of our delicious sweets & shop</p>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="aspect-square rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1599639668273-41d7364fc51a?w=400&h=400&fit=crop" alt="Gulab Jamun" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-square rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400&h=400&fit=crop" alt="Rasgulla" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-square rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1589119908995-c6837fa14848?w=400&h=400&fit=crop" alt="Laddu" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-square rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1626803775151-61d756612fcd?w=400&h=400&fit=crop" alt="Jalebi" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-square rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1605197136312-dba8b5595f5a?w=400&h=400&fit=crop" alt="Kaju Katli" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-square rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1616165602770-f149f61f818c?w=400&h=400&fit=crop" alt="Rasmalai" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-square rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&h=400&fit=crop" alt="Halwa" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-square rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1599043513900-489f22695880?w=400&h=400&fit=crop" alt="Motichoor" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Image Side -->
+                <div data-aos="fade-right">
+                    <div class="relative">
+                        <div class="aspect-video bg-lightOrange rounded-2xl overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=600&h=400&fit=crop" alt="Sweet Shop" class="w-full h-full object-cover">
+                        </div>
+                        <!-- Floating Badge -->
+                        <div class="absolute -bottom-6 -right-6 bg-primary text-white px-6 py-4 rounded-xl shadow-lg">
+                            <p class="text-3xl font-bold">25+</p>
+                            <p class="text-sm">Years</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Side -->
+                <div data-aos="fade-left">
+                    <div class="inline-flex items-center gap-2 bg-orange-100 text-accent px-4 py-2 rounded-full mb-4">
+                        <i class="ph-fill ph-storefront"></i>
+                        <span class="text-sm font-medium">About Us</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-brown mb-6">Kashipur's Most Trusted Sweet Shop</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Kundan Misthan Bhandar has been serving the finest Indian sweets and snacks in Kashipur for over 25 years. Our commitment to quality, authenticity, and customer satisfaction has made us the first choice for sweets in the region.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        We use only 100% pure desi ghee and traditional recipes passed down through generations. Every sweet is made with love and care, ensuring the authentic taste that our customers love.
+                    </p>
+
+                    <!-- Features -->
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-lightOrange rounded-full flex items-center justify-center">
+                                <i class="ph-fill ph-check-circle text-primary"></i>
+                            </div>
+                            <span class="font-medium">100% Pure Ghee</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-lightOrange rounded-full flex items-center justify-center">
+                                <i class="ph-fill ph-check-circle text-primary"></i>
+                            </div>
+                            <span class="font-medium">Fresh Daily</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-lightOrange rounded-full flex items-center justify-center">
+                                <i class="ph-fill ph-check-circle text-primary"></i>
+                            </div>
+                            <span class="font-medium">Traditional Recipes</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-lightOrange rounded-full flex items-center justify-center">
+                                <i class="ph-fill ph-check-circle text-primary"></i>
+                            </div>
+                            <span class="font-medium">Bulk Orders</span>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-medium hover:bg-primaryDark transition">
+                        <i class="ph-fill ph-phone"></i>
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHY CHOOSE US ==================== -->
+    <section class="py-20 bg-brown text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <!-- Section Header -->
+            <div class="text-center mb-16" data-aos="fade-up">
+                <div class="inline-flex items-center gap-2 bg-white/10 text-primary px-4 py-2 rounded-full mb-4">
+                    <i class="ph-fill ph-star"></i>
+                    <span class="text-sm font-medium">Why Choose Us</span>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">What Makes Us Different</h2>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="text-center p-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="ph-fill ph-heart text-4xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Fresh & Pure</h3>
+                    <p class="text-gray-300">We use only 100% pure desi ghee and finest ingredients in all our products.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="text-center p-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="ph-fill ph-chef-hat text-4xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Expert Chefs</h3>
+                    <p class="text-gray-300">Our sweets are made by expert chefs using traditional recipes.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="text-center p-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="ph-fill ph-truck text-4xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Free Delivery</h3>
+                    <p class="text-gray-300">Free delivery within Kashipur city on orders above ₹500.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="text-center p-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="ph-fill ph-credit-card text-4xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Multiple Payments</h3>
+                    <p class="text-gray-300">Accepting Cash, UPI, Cards, Net Banking & all digital payments.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="text-center p-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="ph-fill ph-package text-4xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Bulk Orders</h3>
+                    <p class="text-gray-300">Special discounts on wedding orders, parties & corporate events.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="text-center p-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="ph-fill ph-clock text-4xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">24/7 Support</h3>
+                    <p class="text-gray-300">Call us anytime for orders, queries or special requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== REVIEWS SECTION ==================== -->
+    <section class="py-20 bg-cream">
+        <div class="max-w-7xl mx-auto px-4">
+            <!-- Section Header -->
+            <div class="text-center mb-16" data-aos="fade-up">
+                <div class="inline-flex items-center gap-2 bg-orange-100 text-accent px-4 py-2 rounded-full mb-4">
+                    <i class="ph-fill ph-chat-circle"></i>
+                    <span class="text-sm font-medium">Testimonials</span>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-brown mb-4">What Customers Say</h2>
+            </div>
+
+            <!-- Reviews Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center gap-1 text-yellow-500 mb-4">
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Best sweets in Kashipur! Gulab Jamun is absolutely delicious. Fresh and authentic taste. Highly recommended!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
+                            <span class="font-bold text-primary">RS</span>
+                        </div>
+                        <div>
+                            <p class="font-bold text-brown">Rahul Sharma</p>
+                            <p class="text-sm text-gray-500">Regular Customer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center gap-1 text-yellow-500 mb-4">
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Ordered bulk sweets for my wedding from Kundan Misthan Bhandar. Excellent quality and timely delivery. Thank you!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
+                            <span class="font-bold text-primary">PS</span>
+                        </div>
+                        <div>
+                            <p class="font-bold text-brown">Priya Singh</p>
+                            <p class="text-sm text-gray-500">Wedding Order</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center gap-1 text-yellow-500 mb-4">
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star-half"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Good quality sweets at reasonable prices. The Kaju Katli is amazing. Quick WhatsApp ordering makes it very convenient."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
+                            <span class="font-bold text-primary">AV</span>
+                        </div>
+                        <div>
+                            <p class="font-bold text-brown">Amit Verma</p>
+                            <p class="text-sm text-gray-500">Online Order</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== BULK ORDER FORM ==================== -->
+    <section id="bulk-order" class="py-20 bg-white">
+        <div class="max-w-3xl mx-auto px-4">
+            <!-- Section Header -->
+            <div class="text-center mb-12" data-aos="fade-up">
+                <div class="inline-flex items-center gap-2 bg-orange-100 text-accent px-4 py-2 rounded-full mb-4">
+                    <i class="ph-fill ph-package"></i>
+                    <span class="text-sm font-medium">Bulk Orders</span>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-brown mb-4">Place Bulk Order</h2>
+                <p class="text-gray-600">For weddings, parties & special events</p>
+            </div>
+
+            <!-- Form -->
+            <form id="bulkOrderForm" class="bg-cream p-8 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-brown font-medium mb-2">Your Name</label>
+                        <input type="text" id="customerName" placeholder="Enter your name" required
+                               class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-brown font-medium mb-2">Phone Number</label>
+                        <input type="tel" id="customerPhone" placeholder="Enter mobile number" required
+                               class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:outline-none transition">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-brown font-medium mb-2">Event Type</label>
+                        <select id="eventType" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:outline-none transition">
+                            <option value="Wedding">💒 Wedding</option>
+                            <option value="Party">🎉 Party</option>
+                            <option value="Festival">🪔 Festival</option>
+                            <option value="Corporate">🏢 Corporate</option>
+                            <option value="Other">📦 Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-brown font-medium mb-2">Event Date</label>
+                        <input type="date" id="eventDate" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:outline-none transition">
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <label class="block text-brown font-medium mb-2">Order Details</label>
+                    <textarea id="orderDetails" rows="4" placeholder="What sweets/namkeen you want? Quantity?" required
+                              class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:outline-none transition"></textarea>
+                </div>
+
+                <div class="mb-6">
+                    <label class="block text-brown font-medium mb-2">Delivery Address</label>
+                    <textarea id="deliveryAddress" rows="2" placeholder="Enter full address"
+                              class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:outline-none transition"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-primary text-white py-4 rounded-xl font-semibold text-lg hover:bg-primaryDark transition flex items-center justify-center gap-2">
+                    <i class="ph-fill ph-whatsapp-logo"></i>
+                    Send Order to WhatsApp
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="py-20 bg-brown text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div data-aos="fade-right">
+                    <div class="inline-flex items-center gap-2 bg-white/10 text-primary px-4 py-2 rounded-full mb-6">
+                        <i class="ph-fill ph-map-pin"></i>
+                        <span class="text-sm font-medium">Visit Us</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Get In Touch</h2>
+                    <p class="text-gray-300 mb-8">Visit our shop or contact us for orders & queries</p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="ph-fill ph-map-pin text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold mb-1">Address</h3>
+                                <p class="text-gray-300">Main Bazar Rd, Kashipur,<br>Uttarakhand 244713</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="ph-fill ph-phone text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold mb-1">Phone</h3>
+                                <p class="text-gray-300">092196 91834</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="ph-fill ph-clock text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold mb-1">Shop Timings</h3>
+                                <p class="text-gray-300">Mon - Sat: 8:00 AM - 11:00 PM<br>Sunday: 8:00 AM - 12:00 PM</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="ph-fill ph-credit-card text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold mb-1">Payment Options</h3>
+                                <p class="text-gray-300">💵 Cash | 📱 UPI | 💳 Card | 🏦 Net Banking</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div data-aos="fade-left">
+                    <div class="aspect-square md:aspect-auto md:h-full bg-white/10 rounded-2xl overflow-hidden">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.0123456789!2d79.123456!3d29.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a0000000000000%3a0x0000000000000000!2sMain%20Bazar%20Rd%2C%20Kashipur%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1234567890!5m2!1sen!2sin"
+                                width="100%"
+                                height="100%"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-[#2D1F1A] text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="flex items-center justify-center gap-2 mb-4">
+                <i class="ph-fill ph-confetti text-2xl text-primary"></i>
+                <span class="text-xl font-bold">Kundan Misthan Bhandar</span>
+            </div>
+            <p class="text-gray-400 mb-4">Kashipur's Finest Sweets Since 25+ Years</p>
+            <div class="flex justify-center gap-6 mb-4">
+                <a href="tel:09219691834" class="text-gray-400 hover:text-primary transition">
+                    <i class="ph-fill ph-phone text-xl"></i>
+                </a>
+                <a href="https://wa.me/919219691834" target="_blank" class="text-gray-400 hover:text-[#25D366] transition">
+                    <i class="ph-fill ph-whatsapp-logo text-xl"></i>
+                </a>
+            </div>
+            <p class="text-gray-500 text-sm">© 2024 Kundan Misthan Bhandar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+    <script>
+        // Initialize AOS Animation
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Category Tab Switching
+        function showCategory(category) {
+            // Hide all categories
+            document.querySelectorAll('.category-content').forEach(el => {
+                el.classList.add('hidden');
+            });
+
+            // Show selected category
+            document.getElementById(category).classList.remove('hidden');
+
+            // Update button styles
+            document.querySelectorAll('.category-btn').forEach(btn => {
+                btn.classList.remove('bg-primary', 'text-white');
+                btn.classList.add('bg-lightOrange', 'text-brown');
+            });
+
+            event.target.classList.remove('bg-lightOrange', 'text-brown');
+            event.target.classList.add('bg-primary', 'text-white');
+        }
+
+        // Order Item via WhatsApp
+        function orderItem(itemName) {
+            const message = `Hello Kundan Misthan Bhandar, I want to order: ${itemName}`;
+            const url = `https://wa.me/919219691834?text=${encodeURIComponent(message)}`;
+            window.open(url, '_blank');
+        }
+
+        // Bulk Order Form Submit
+        document.getElementById('bulkOrderForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById('customerName').value;
+            const phone = document.getElementById('customerPhone').value;
+            const eventType = document.getElementById('eventType').value;
+            const eventDate = document.getElementById('eventDate').value;
+            const orderDetails = document.getElementById('orderDetails').value;
+            const address = document.getElementById('deliveryAddress').value;
+
+            let message = `Hello Kundan Misthan Bhandar, I want to place a bulk order:\n\n`;
+            message += `Name: ${name}\n`;
+            message += `Phone: ${phone}\n`;
+            message += `Event Type: ${eventType}\n`;
+            if (eventDate) message += `Event Date: ${eventDate}\n`;
+            message += `Order Details: ${orderDetails}\n`;
+            if (address) message += `Delivery Address: ${address}`;
+
+            const url = `https://wa.me/919219691834?text=${encodeURIComponent(message)}`;
+            window.open(url, '_blank');
+
+            // Reset form
+            this.reset();
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
